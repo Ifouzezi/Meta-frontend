@@ -20,8 +20,8 @@ body {
     display: block;
   }
   
-  h2 span {
-    color: #FA9F42;
+  h2 > span {
+    color: #fa9f42;
     font-size: 0.75em;
   }
   
@@ -29,4 +29,3 @@ body {
     padding-top: 12px;
     font-size: 0.75em;
   }
-  
