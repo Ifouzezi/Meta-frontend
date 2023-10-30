@@ -1,0 +1,40 @@
+.clock {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .hand {
+    position: absolute;
+    background-color: red;
+    border: 2px solid white;
+    transform-origin: 50% 50%;
+  }
+  
+  .minutes {
+    width: 2px;
+    height: 70px;
+    top: 35%;
+    left: 50%;
+    animation: cycle 60s infinite linear;
+  }
+  
+  .hours {
+    width: 4px;
+    height: 50px;
+    top: 45%;
+    left: 50%;
+    animation: cycle 720s infinite linear;
+  }
+  
+  @keyframes cycle {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
