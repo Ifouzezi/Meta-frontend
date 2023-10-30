@@ -1,40 +1,35 @@
 .clock {
-    width: 200px;
+    width: 200px; /* Adjust the width and height to your preference */
     height: 200px;
     background-color: blue;
-    border-radius: 50%;
+    border-radius: 50%; /* Makes it a circle */
     position: relative;
-  }
-  
-  .hand {
+}
+
+.hand {
     position: absolute;
     background-color: red;
-    border: 2px solid white;
-    transform-origin: 50% 50%;
-  }
-  
-  .minutes {
-    width: 2px;
+    border: 2px solid white; /* White border */
+    transform-origin: 50% 100%; /* Set the pivot point at the bottom center */
+}
+
+.minutes {
+    width: 2px; /* Adjust the width for the minute hand */
     height: 70px;
-    top: 35%;
-    left: 50%;
-    animation: cycle 60s infinite linear;
-  }
-  
-  .hours {
-    width: 4px;
+    top: 15%; /* Adjust the positioning of the minute hand */
+    left: 50%; /* Center it horizontally */
+    animation: cycle 6s infinite linear;/* Center it horizontally and rotate */
+}
+
+.hours {
+    width: 4px; /* Adjust the width for the hour hand */
     height: 50px;
-    top: 45%;
-    left: 50%;
-    animation: cycle 720s infinite linear;
-  }
-  
-  @keyframes cycle {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
+    top: 25%; /* Adjust the positioning of the hour hand */
+    left: 50%; /* Center it horizontally */
+    animation: cycle 60s infinite linear; /* Center it horizontally and rotate */
+}
+
+@keyframes cycle {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
